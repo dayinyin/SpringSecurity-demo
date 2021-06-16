@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: root
+    password: 99999
+    url: jdbc:mysql://【url】?useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#mybatis-plus配置控制台打印完整带参数SQL语句
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    
+mybatis:
+  config-location: classpath:/mybatis/MybatisConfig.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
